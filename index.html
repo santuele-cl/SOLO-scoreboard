@@ -1,0 +1,100 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <h4 
+                class="score round-corner" 
+                id="score-home">
+                0
+            </h4>
+            <div>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="addOneHome()">
+                    +1
+                </button>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="addTwoHome()">
+                    +2
+                </button>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="addThreeHome()">
+                    +3
+                </button>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="minusOneHome()">
+                    -1
+                </button>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h4 class="period-title">Quarter:
+                    <span
+                        class="period-text round-corner"
+                        id="period-num-el">1</span>
+                    <div>
+                        <button 
+                            class="q-btn round-corner"
+                            onclick="addOne()">+</button>
+                        <button 
+                            class="q-btn round-corner"
+                            onclick="minusOnePeriod()">-</button>
+                    </div>
+                </h4>
+            </div>
+            <div>
+                <button 
+                    class="new-game-btn round-corner"
+                    onclick="newGame()">
+                    New Game
+                </button>
+            </div>
+        </div>
+        <div>
+            <h3>GUEST</h3>
+            <h4 
+                class="score round-corner" id="score-guest">
+                0
+            </h4>
+            <div>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="addOneGuest()">
+                    +1
+                </button>
+                <button 
+                    id="guest-plus-two" 
+                    class="score-btn round-corner"
+                    onclick="addTwoGuest()">
+                    +2
+                </button>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="addThreeGuest()">
+                    +3
+                </button>
+                <button 
+                    class="score-btn round-corner"
+                    onclick="minusOneGuest()">
+                    -1
+                </button>
+            </div>
+        </div>
+        <div class="match-history">
+            
+        </div>
+        <script src="index.js"></script>
+</body>
+
+</html>
